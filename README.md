@@ -73,9 +73,9 @@ $ ripple emulate
 
 By default, Ripple emulator starts on `http://localhost:4400/?enableripple=cordova-3.0.0`
 
-Work in the `/src` folder. JavaScripts, HTML and CSS will be automatically compiled into the `/www` folder.
+Work in the `/src` folder with haml, scss and coffee files (HTML, CSS and JavaScript files will be automatically compiled into the `/www` folder).
 
-If you need extra `.haml` and `.scss` files, remember to edit `Gruntfile.coffee`. I.e., we are going to add `settings.haml` and `theme-wp.scss`
+If you need extra `.haml` and `.scss` files, remember to add them in the `Gruntfile.coffee` (it is not required for CoffeeScript files). In the following example, we are going to add `settings.haml` and `theme-wp.scss`
 
 ```coffee
 # [...]
@@ -108,6 +108,12 @@ sass:
 + http://github.com/cesidio
 + http://twitter.com/cesid
 
+
+## Contributing
+
+**Early Contributors: push against master branch until version is 0.0.0**
+
+Please read through our [contributing guidelines](CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
 
 ## Copyright and license
