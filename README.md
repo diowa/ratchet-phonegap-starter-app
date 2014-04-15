@@ -18,6 +18,8 @@ This is a simple starter application using the following technologies:
  [6]: http://haml.info/
  [7]: http://ripple.incubator.apache.org/
 
+
+
 ## Prerequisites
 
 ```sh
@@ -25,12 +27,15 @@ $ npm install -g phonegap grunt-cli ripple-emulator
 ```
 
 
+
 ## Setup
+
 ### 1. Clone this repository
 
 ```sh
 $ git clone https://github.com/diowa/ratchet-phonegap-starter-app.git my-app
 ```
+
 
 ### 2. Build your application for specific platform
 
@@ -39,17 +44,20 @@ $ cd my-app
 $ phonegap build android
 ```
 
+
 ### 3. Install node dependencies
 
 ```sh
 $ npm install
 ```
 
+
 ### 4. Start Grunt
 
 ```sh
 $ grunt
 ```
+
 
 ### 5. Start Ripple
 
@@ -58,11 +66,13 @@ $ ripple emulate
 ```
 
 
+
 ## Development Guide
 
 Edit all your files inside the `src` folder. JavaScripts, HTML and CSS will be automatically compiled into the `www` folder.
 
 If you need extra `haml` and `scss` files, remember to edit `Gruntfile.coffee`.
+
 
 
 ## Authors
@@ -78,11 +88,13 @@ If you need extra `haml` and `scss` files, remember to edit `Gruntfile.coffee`.
 + http://twitter.com/cesid
 
 
+
 ## Copyright and license
 
 **Ratchet Phonegap Starter App** is licensed under the BSD 2-Clause License
 
 Check the LICENSE file for more information
+
 
 
 ## Thanks
