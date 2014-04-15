@@ -1,4 +1,4 @@
-# Ratchet Phonegap Starter App
+# Ratchet PhoneGap Starter App
 
 This is a simple starter application using the following technologies:
 
