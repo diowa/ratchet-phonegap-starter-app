@@ -2,21 +2,23 @@
 
 This is a simple starter application using the following technologies:
 
-* [Phonegap][1]
-* [Ratchet][2]
+* [PhoneGap 3.4.0][1]
+* [Ripple Emulator][2]
 * [Grunt][3]
-* [CoffeeScript][4]
-* [Sass][5]
-* [HAML][6]
-* [Ripple][7]
+* [Ratchet][4]
+* [HAML][5]
+* [Sass][6]
+* [CoffeeScript][7]
+* [Autoprefixer][8]
 
  [1]: http://phonegap.com/
- [2]: http://goratchet.com/
+ [2]: http://ripple.incubator.apache.org/
  [3]: http://gruntjs.com/
- [4]: http://coffeescript.org/
- [5]: http://sass-lang.com/
- [6]: http://haml.info/
- [7]: http://ripple.incubator.apache.org/
+ [4]: http://goratchet.com/
+ [5]: http://haml.info/
+ [6]: http://sass-lang.com/
+ [7]: http://coffeescript.org/
+ [8]: https://github.com/ai/autoprefixer
 
 
 
