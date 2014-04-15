@@ -1,5 +1,7 @@
 # Ratchet PhoneGap Starter App
 
+![Screenshot](http://i.imgur.com/uuX7CGu.png)
+
 This is a simple starter application using the following technologies:
 
 * [PhoneGap 3.4.0][1]
