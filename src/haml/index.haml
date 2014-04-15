@@ -5,11 +5,19 @@
     %meta{ content: 'telephone=no', name: 'format-detection' }
     %meta{ content: 'user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi', name: 'viewport' }
     %link{ href: 'css/index.css', rel: 'stylesheet', type: 'text/css' }
-    %link{ href: 'css/theme-android.css', rel: 'stylesheet', type: 'text/css' }
+
+    /Uncomment the following line for Android Applications
+    /%link{ href: 'css/theme-android.css', rel: 'stylesheet', type: 'text/css' }
+
+    /Uncomment the following line for iOS Applications
+    /%link{ href: 'css/theme-ios.css', rel: 'stylesheet', type: 'text/css' }
+
     %title Hello World
+
   %body
     %header.bar.bar-nav
       %h1.title Ratchet Phonegap Starter App
+
     #deviceready.event-listener
       .bar.bar-standard.bar-header-secondary
         %button.btn.btn-block.listening Connecting to Device
@@ -23,6 +31,5 @@
     %script{ src: 'js/ratchet/sliders.js',               type: 'text/javascript' }
     %script{ src: 'js/ratchet/toggles.js',               type: 'text/javascript' }
     %script{ src: 'js/index.js',                         type: 'text/javascript' }
-
     :javascript
       app.initialize();

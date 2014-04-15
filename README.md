@@ -9,4 +9,6 @@ $ npm install -g phonegap grunt-cli ripple-emulator
 ## 1. Clone this repository
 
 ```sh
-git clone
+$ git clone https://github.com/diowa/ratchet-phonegap-starter-app.git my-app
+$ cd my-app
+```

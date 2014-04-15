@@ -54,4 +54,5 @@ IOS/www/
 node_modules
 www/css/*.css
 www/js/index.js
+www/spec/index.js
 www/*.html
