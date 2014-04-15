@@ -1,0 +1,52 @@
+!!!
+%html
+  %head
+    %title Jasmine Spec Runner
+    / jasmine source
+    %link{ href: 'spec/lib/jasmine-1.2.0/jasmine_favicon.png', rel: 'shortcut icon', type: 'image/png' }
+    %link{ href: 'spec/lib/jasmine-1.2.0/jasmine.css', rel: 'stylesheet', type: 'text/css' }
+    %script{ src: 'spec/lib/jasmine-1.2.0/jasmine.js', type: 'text/javascript' }
+    %script{ src: 'spec/lib/jasmine-1.2.0/jasmine-html.js', type: 'text/javascript' }
+
+    / include source files here...
+    %script{ src: 'js/ratchet/modals.js',                type: 'text/javascript' }
+    %script{ src: 'js/ratchet/popovers.js',              type: 'text/javascript' }
+    %script{ src: 'js/ratchet/push.js',                  type: 'text/javascript' }
+    %script{ src: 'js/ratchet/segmented-controllers.js', type: 'text/javascript' }
+    %script{ src: 'js/ratchet/sliders.js',               type: 'text/javascript' }
+    %script{ src: 'js/ratchet/toggles.js',               type: 'text/javascript' }
+    %script{ src: 'js/index.js',                         type: 'text/javascript' }
+
+    / include spec files here...
+    %script{src: 'spec/helper.js', type: 'text/javascript'}
+    %script{src: 'spec/index.js', type: 'text/javascript'}
+
+    :javascript
+      (function() {
+          var jasmineEnv = jasmine.getEnv();
+          jasmineEnv.updateInterval = 1000;
+
+          var htmlReporter = new jasmine.HtmlReporter();
+
+          jasmineEnv.addReporter(htmlReporter);
+
+          jasmineEnv.specFilter = function(spec) {
+              return htmlReporter.specFilter(spec);
+          };
+
+          var currentWindowOnload = window.onload;
+
+          window.onload = function() {
+              if (currentWindowOnload) {
+                  currentWindowOnload();
+              }
+              execJasmine();
+          };
+
+          function execJasmine() {
+              jasmineEnv.execute();
+          }
+      })();
+
+  %body
+    #stage{ style: 'display:none;' }

@@ -1,0 +1,48 @@
+{
+  "name": "ratchet-phonegap-starter-app",
+  "version": "0.0.1",
+  "authors": [
+    "Cesidio Di Landa <cesidio.dilanda@gmail.com>",
+    "Geremia Taglialatela <tagliala.dev@gmail.com>"
+  ],
+  "description": "Ratchet Starter App",
+  "main": "www/index.html",
+  "keywords": [
+    "ratchet",
+    "phonegap",
+    "cordoba",
+    "starter app"
+  ],
+  "license": "BSD-2-Clause",
+  "private": true,
+  "ignore": [
+    "hooks",
+    "merges",
+    "out",
+    "phonegap",
+    "platforms",
+    "plugins",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "grunt": "~ 0.4.2",
+    "grunt-contrib-coffee": "~ 0.10.1",
+    "grunt-contrib-haml": "~ 0.1.2",
+    "grunt-contrib-jshint": "~ 0.6.3",
+    "grunt-contrib-nodeunit": "~ 0.2.0",
+    "grunt-contrib-sass": "~ 0.7.3",
+    "grunt-contrib-uglify": "~ 0.4.0",
+    "grunt-autoprefixer": "~ 0.7.2",
+    "grunt-phonegap": "~ 0.13.3",
+    "phonegap": "~ 3.4.0"
+  },
+  "dependencies": {
+    "watch": "~ 0.9.0",
+    "grunt-contrib-watch": "~ 0.6.1",
+    "grunt-exec": "~ 0.4.5"
+  }
+}
