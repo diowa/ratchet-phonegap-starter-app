@@ -17,6 +17,7 @@ We only accept issues that are bug reports or feature requests. Bugs must be iso
 
 ## Key branches
 
+- Push against master branch until the version is `0.0.0`
 - `master` is the latest, deployed version. **Never make pull requests against this branch.**
 - `develop` is the official development branch for the next release.
 
