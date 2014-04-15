@@ -51,6 +51,8 @@ IOS/www/
 
 # Application Specific
 .sass-cache
+platforms
+plugins
 node_modules
 www/css/*.css
 www/js/index.js
