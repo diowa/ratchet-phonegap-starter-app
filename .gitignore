@@ -51,6 +51,7 @@ IOS/www/
 
 # Application Specific
 .sass-cache
+merges
 platforms
 plugins
 node_modules
