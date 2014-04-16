@@ -5,11 +5,9 @@ describe 'app', ->
         spyOn app, 'onDeviceReady'
         app.initialize()
         helper.trigger window.document, 'deviceready'
-        return
-
-      waitsFor (->
+      waitsFor ->
         app.onDeviceReady.calls.length > 0
-      ), 'onDeviceReady should be called once', 500
+      , 'onDeviceReady should be called once', 500
       runs ->
         expect(app.onDeviceReady).toHaveBeenCalled()
 
