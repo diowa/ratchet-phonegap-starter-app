@@ -1,6 +1,6 @@
 # Ratchet PhoneGap Starter App
 
-![Screenshot](http://i.imgur.com/uuX7CGu.png)
+![Screenshot](http://i57.tinypic.com/15gp0dj.png)
 
 This is a simple starter application using the following technologies:
 
