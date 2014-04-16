@@ -1,6 +1,6 @@
 describe 'app', ->
   describe 'initialize', ->
-    it 'should bind deviceready', ->
+    it 'binds deviceready', ->
       runs ->
         spyOn app, 'onDeviceReady'
         app.initialize()
@@ -14,7 +14,7 @@ describe 'app', ->
         expect(app.onDeviceReady).toHaveBeenCalled()
 
   describe 'onDeviceReady', ->
-    it 'should report that it fired', ->
+    it 'reports that it fired', ->
       spyOn app, 'receivedEvent'
       app.onDeviceReady()
       expect(app.receivedEvent).toHaveBeenCalledWith 'deviceready'
@@ -23,18 +23,18 @@ describe 'app', ->
     beforeEach ->
       el = document.getElementById('stage')
       el.innerHTML = """
-        <div id="deviceready" class="event-listener">'
-          <button class="btn btn-block listening">Connecting to Device</button>'
-          <button class="btn btn-block received">Device is Ready</button>'
-        '</div>'
+        <div id="deviceready" class="event-listener">
+          <button class="btn btn-block listening">Connecting to Device</button>
+          <button class="btn btn-block received">Device is Ready</button>
+        </div>
       """
 
-    it 'should hide the listening element', ->
+    it 'hides the listening element', ->
       app.receivedEvent 'deviceready'
       displayStyle = helper.getComputedStyle('#deviceready .listening', 'display')
       expect(displayStyle).toEqual 'none'
 
-    it 'should show the received element', ->
+    it 'shows the received element', ->
       app.receivedEvent 'deviceready'
       displayStyle = helper.getComputedStyle('#deviceready .received', 'display')
       expect(displayStyle).toEqual 'block'

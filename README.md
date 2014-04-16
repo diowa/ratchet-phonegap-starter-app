@@ -85,6 +85,7 @@ haml:
   dist:
     files:
       'www/index.html': 'src/haml/index.haml'
+      'www/two.html': 'src/haml/two.haml'
       'www/spec.html': 'src/spec/spec.haml'
       'www/settings.html': 'src/haml/settings.haml'
 # [...]
