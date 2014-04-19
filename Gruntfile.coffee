@@ -49,6 +49,8 @@ module.exports = (grunt) ->
         dest: 'build/<%= pkg.name %>.min.js'
 
     watch:
+      options:
+        interval: 5000
       coffee:
         files: ['src/coffee/*.coffee', 'src/spec/*.coffee']
         tasks: ['coffee']
